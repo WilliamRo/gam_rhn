@@ -1,0 +1,24 @@
+# Ignore PyCharm files
+.idea/
+
+# Ignore byte-compiled files
+*.pyc
+*pycache*
+
+# Ignore records and data folders
+notes/
+checkpoints/
+logs/
+snapshots/
+*.sum
+*.txt
+*records*/
+data/
+
+# Ignore vim files
+*.swp
+
+# Ignore Jupyter-related files
+*.ipynb
+*/.ipynb_checkpoints/*
+
