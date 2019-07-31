@@ -30,4 +30,4 @@ s.register('hyper_kernel', 'lstm')
 s.register('fast_layers', 2, 3, 4, 5, 6)
 s.register('lr', 0.001)
 
-s.run(10)
+s.run(50)

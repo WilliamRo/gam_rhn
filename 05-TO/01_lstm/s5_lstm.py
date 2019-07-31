@@ -29,5 +29,5 @@ s.register('gpu_id', gpu_id)
 s.register('state_size', 67)
 s.register('lr', 0.001)
 
-s.run(10)
+s.run(50)
 

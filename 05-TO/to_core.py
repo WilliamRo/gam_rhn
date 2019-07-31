@@ -24,7 +24,7 @@ th.job_dir = from_root('05-TO')
 # Some device configurations
 # -----------------------------------------------------------------------------
 th.allow_growth = False
-th.gpu_memory_fraction = 0.3
+th.gpu_memory_fraction = 0.45
 
 # -----------------------------------------------------------------------------
 # Set information about the data set
