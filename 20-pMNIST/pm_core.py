@@ -47,7 +47,6 @@ th.early_stop = True
 th.patience = 15
 
 th.num_steps = -1
-th.val_batch_size = -1
 th.shuffle = True
 th.print_cycle = 1
 th.gather_note = True
