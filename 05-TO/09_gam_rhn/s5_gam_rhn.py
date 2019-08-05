@@ -36,4 +36,4 @@ s.register('num_layers', 1, 2, 3, 4, 5, 6)
 
 s.register('lr', 0.001)
 
-s.run(10)
+s.run(50)
