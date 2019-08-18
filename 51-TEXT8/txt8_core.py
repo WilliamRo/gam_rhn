@@ -50,7 +50,7 @@ th.export_tensors_upon_validation = True
 th.early_stop = True
 th.patience = 5
 
-th.num_steps = 150
+th.num_steps = 100
 th.print_cycle = 1
 th.gather_note = True
 
