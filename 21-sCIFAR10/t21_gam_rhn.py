@@ -49,7 +49,7 @@ def main(_):
   th.model = model
 
   th.gam_config = '5x60'
-  th.head_size = 60
+  th.head_size = 100
 
   th.hyper_kernel = 'gru'
   th.state_size = 300
