@@ -61,7 +61,7 @@ def main(_):
   # ---------------------------------------------------------------------------
   th.epoch = 10000
   th.batch_size = 128
-  th.num_steps = 150
+  th.num_steps = 100
 
   th.patience = 5
 
