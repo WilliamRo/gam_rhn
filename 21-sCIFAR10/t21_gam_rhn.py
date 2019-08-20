@@ -55,6 +55,9 @@ def main(_):
   th.state_size = 300
   th.num_layers = 1
 
+  th.head_bias = True
+  th.address_bias = True
+
   th.gam_dropout = 0.1
   th.rhn_dropout = 0.3
   th.output_dropout = 0.25
