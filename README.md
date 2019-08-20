@@ -9,7 +9,7 @@ tensorflow (>=1.8.0) and other common packages
 
 **TL;DR**
 
-Change directory into `XX-YYYY` folder (e.g. `05-TO`) and run `tX_ZZZ.py` directly. For example,
+Change directory into `XX-YYYY` folder (e.g. `50-cPTB`) and run `tX_ZZZ.py` directly. For example,
 
 ```shell
 william@alienware:~/gam_rhn/50-cPTB$ python t50_gam_rhn.py
@@ -18,16 +18,16 @@ william@alienware:~/gam_rhn/50-cPTB$ python t50_gam_rhn.py
 **More details**
 
 - [File Organization](#file-organization)
-- [Trial Configurations](#trial-configuarions)
+- [Trial Configurations](#trial-configurations)
 - Other details will be added soon ...
 
 ## File Organization
 
-This repository follows a recommended way to organization files using `tframe`.
+This repository follows a recommended way to organization projects based on `tframe`.
 
 The root folder contains
 
-- Several `XX-YYYY` folders. Here `XX` denotes dataset ID and `YYYY` denotes dataset name. For example `05-TO` contains all necessary files for experiment on Temporal Order problems.
+- Several `XX-YYYY` folders. Here `XX` denotes dataset ID and `YYYY` denotes dataset name. For example `05-TO` contains all necessary files for experiments on Temporal Order problems.
 - One `tframe` folder. A submodule used in this repo.
 - One `view_notes.py` module. Run this module directly to open a tool to view results of trials with different hyper-parameters. Details will be given later.
 - Other unimportant file like `README.md`.
@@ -64,7 +64,7 @@ Each `XX-YYYY` folder contains:
 
 Trials are configurated using `tframe` `Config` class. The instance name is usually `th` since it's easy to type. 
 
-`tframe` provides hundreds of configuration options for users which are maintained in `tframe/configs` package. Each trial is likely to involve dozens of configurations including dataset configurations, device configurations, console output configurations, path specifications and most importantly, hyper-parameters. To be honestly, this makes `tframe` complicated and forbidding, even the developer himself will be confused sometimes. However, life will be much easier if one is familiar with those options since many of them enables people to carry out a very complicated logic using only one line in the corresponding task module.  
+`tframe` provides hundreds of configuration options for users which are maintained in `tframe/configs` package. Each trial is likely to involve dozens of configurations including dataset configurations, device configurations, console output configurations, path specifications and most importantly, hyper-parameters. To be honestly, this makes `tframe` complicated and forbidding, even the developer himself will be confused sometimes. However, life will be much easier if one is familiar with those options since many of them enable users to carry out very complicated logics by turning on simple options.
 
 **For IDE users**, set the configurations in the corresponding task module `tXX_ZZZ.py` and run this module directly.
 
