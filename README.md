@@ -43,10 +43,10 @@ Each `XX-YYYY` folder contains:
   - `YY_du.py` contains code for loading data as `tframe` dataset.
   - `YY_mu.py` contains utilities for building a `tframe` model.
   - `YY_core.py` contains
-    - Logics to add paths to `sys.path`
+    - Code to add paths to `sys.path`
     - Code to instantiate `Config`. 
       - `th = Config(as_global=True)`
-    - Some common configurations for all task modules including 
+    - Some common configurations for all task modules inside `XX-YYYY` including 
       - data input shape `th.input_shape`
       - GPU configurations, e.g. `th.gpu_memory_fraction = 0.45`
       - Hyper-parameters which are likely to be fixed, e.g. `th.batch_size = 64` 
