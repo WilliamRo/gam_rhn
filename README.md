@@ -3,6 +3,10 @@ GAM-RHN
 Experiments in Recurrent Highway Networks with Grouped Auxiliary Memory paper.
 All experiments are done using [tframe](https://github.com/WilliamRo/tframe), which contains a number of neural network APIs based on ```tensorflow```.
 
+![fig1](https://github.com/WilliamRo/gam_rhn/blob/master/figures/gam_rhn_diagram.png?raw=true)
+
+*Figure 1: A diagram for the proposed GAM-RHN architecture.*
+
 **Requirements**
 
 tensorflow (>=1.8.0) and other common packages
