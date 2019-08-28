@@ -6,6 +6,7 @@ DIR_DEPTH = 1
 for _ in range(DIR_DEPTH + 1):
   ROOT = os.path.dirname(ROOT)
   sys.path.insert(0, ROOT)
+import tensorflow as tf
 from tframe import console, SaveMode
 from tframe.trainers.trainer import TrainerHub as Config
 from tframe import Classifier
@@ -34,6 +35,7 @@ th.input_shape = [1]
 th.target_dim = 1
 th.num_classes = 27
 th.output_dim = th.num_classes
+th.target_dtype = tf.int32
 
 th.val_size = 5000000
 th.test_size = 4999999
