@@ -45,12 +45,12 @@ def main(_):
   th.model = model
   th.hidden_dim = 50
 
-  th.gam_config = '3x800'
-  th.head_size = 400
+  th.gam_config = '3x750'
+  th.head_size = 300
 
   th.hyper_kernel = 'gru'
-  th.state_size = 1000
-  th.num_layers = 5
+  th.state_size = 750
+  th.num_layers = 10
 
   th.gam_dropout = 0.4
   th.rhn_dropout = 0.3
@@ -60,13 +60,13 @@ def main(_):
   # 3. trainer setup
   # ---------------------------------------------------------------------------
   th.epoch = 10000
-  th.batch_size = 128
+  th.batch_size = 100
   th.num_steps = 100
 
   th.patience = 5
 
   th.optimizer = tf.train.AdamOptimizer
-  th.learning_rate = 0.001
+  th.learning_rate = 0.0001
 
   th.clip_threshold = 1.0
   th.clip_method = 'value'
@@ -81,7 +81,19 @@ def main(_):
   th.val_num_steps = 1000
   th.val_batch_size = 20
   # ---------------------------------------------------------------------------
-  # 5. other stuff and activate
+  # 5. dynamic evaluation
+  # ---------------------------------------------------------------------------
+  if th.dynamic_evaluation:
+    th.train = False
+    th.de_max_batches = 450
+    th.de_val_pct = 0.1
+    th.de_eval_val_set = True
+    th.train_stats_exists = False
+    th.de_eta = '0.00001'
+    th.de_lambda = '0.0075'
+
+  # ---------------------------------------------------------------------------
+  # 6. other stuff and activate
   # ---------------------------------------------------------------------------
   th.mark = GamRHN.mark()
   th.gather_summ_name = th.prefix + summ_name + th.suffix + '.sum'
