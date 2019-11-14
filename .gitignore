@@ -22,3 +22,4 @@ data/
 *.ipynb
 */.ipynb_checkpoints/*
 
+*_grad.py
