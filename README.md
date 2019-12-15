@@ -1,3 +1,5 @@
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/recurrent-highway-networks-with-grouped/language-modelling-on-penn-treebank-character)](https://paperswithcode.com/sota/language-modelling-on-penn-treebank-character?p=recurrent-highway-networks-with-grouped)
+
 GAM-RHN
 =========
 Experiments in Recurrent Highway Networks with Grouped Auxiliary Memory paper.
