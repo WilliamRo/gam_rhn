@@ -1,4 +1,6 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/recurrent-highway-networks-with-grouped/language-modelling-on-penn-treebank-character)](https://paperswithcode.com/sota/language-modelling-on-penn-treebank-character?p=recurrent-highway-networks-with-grouped)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/recurrent-highway-networks-with-grouped/language-modelling-on-text8)](https://paperswithcode.com/sota/language-modelling-on-text8?p=recurrent-highway-networks-with-grouped)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/recurrent-highway-networks-with-grouped/stock-trend-prediction-on-fi-2010)](https://paperswithcode.com/sota/stock-trend-prediction-on-fi-2010?p=recurrent-highway-networks-with-grouped)
 
 GAM-RHN
 =========
